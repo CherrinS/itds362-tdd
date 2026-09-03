@@ -20,6 +20,11 @@ def test_multiplication_by_two():
     flour.times(2)
     assert flour.times(2).amount == 400
 
+def test_equality():
+    assert Quantity(200) == Quantity(200)
+    assert Quantity(200) != Quantity(300)
+
+
 
 
 
